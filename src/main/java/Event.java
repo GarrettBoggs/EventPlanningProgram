@@ -6,6 +6,12 @@ class Event {
   }
 
   public int getCost() {
-    return 1;
+    int total = 0;
+
+    if(mChips){
+      total += 5;
+    }
+
+    return total;
   }
 }
