@@ -1,8 +1,10 @@
 class Event {
   private boolean mChips;
+  private int mPeople;
 
-  public Event(boolean chips) {
+  public Event(boolean chips, int people) {
     mChips = chips;
+    mPeople = people;
   }
 
   public int getCost() {
