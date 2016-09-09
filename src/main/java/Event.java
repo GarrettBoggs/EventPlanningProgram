@@ -1,11 +1,11 @@
 class Event {
-  public boolean mChips;
+  private boolean mChips;
 
   public Event(boolean chips) {
-
+    mChips = chips;
   }
 
-  public Integer getCost() {
-    return 5;
+  public int getCost() {
+    return 1;
   }
 }
