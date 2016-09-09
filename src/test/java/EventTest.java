@@ -40,4 +40,12 @@ public class EventTest{
     Event testEvent = new Event(true,true,5,"pros");
     assertEquals(60, testEvent.getCost());
   }
+
+  @Test
+  public void randomizeParty_returnsavalue_true() {
+    Event testEvent = new Event(false,false,0,"none");
+    testEvent.randomizeParty();
+    Integer convertThis = new Integer(testEvent.getCost());
+    assertEquals(true, convertThis instanceof Integer);
+  }
 }
