@@ -20,7 +20,7 @@ public class EventTest{
 
   @Test
   public void getCost_costIncreaseswithChips_5() {
-    Event testEvent = new Event(true,5);
+    Event testEvent = new Event(true,0);
     assertEquals(5, testEvent.getCost());
   }
 
@@ -29,4 +29,6 @@ public class EventTest{
     Event testEvent = new Event(true,5);
     assertEquals(10, testEvent.getCost());
   }
+
+
 }

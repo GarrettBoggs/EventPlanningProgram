@@ -14,6 +14,7 @@ class Event {
       total += 5;
     }
 
+    total += mPeople;
     return total;
   }
 }

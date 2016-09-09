@@ -15,7 +15,7 @@ _A event planning java app for use with gradle and junit_
 
 ## GitHub link
 
-https://github.com/ewajm/EventPlanningProgram
+https://github.com/GarrettBoggs/EventPlanningProgram
 
 ## Licensing
 
