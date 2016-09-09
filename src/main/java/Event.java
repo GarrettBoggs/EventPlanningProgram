@@ -13,16 +13,26 @@ class Event {
 
   public int getCost() {
     int total = 0;
-    if(mChips){
+    if(mChips)
       total += 5;
-    }
-    if(mDrinks){
+
+    if(mDrinks)
       total += 10;
-    }
-    if(mBand == "weezer"){
+
+    if(mBand.equals("pros"))
       total += 40;
-    }
+    else if(mBand.equals("kids"))
+      total += 10;
+
     total += mPeople;
     return total;
+  }
+
+  public String getBand() {
+    return mBand;
+  }
+
+  public int getPeople() {
+    return mPeople;
   }
 }

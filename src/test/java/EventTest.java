@@ -36,8 +36,8 @@ public class EventTest{
   }
 
   @Test
-  public void getCost_costIncreasesWithBand_20() {
-    Event testEvent = new Event(true,true,5,"weezer");
+  public void getCost_costIncreasesWithBand_60() {
+    Event testEvent = new Event(true,true,5,"pros");
     assertEquals(60, testEvent.getCost());
   }
 }
