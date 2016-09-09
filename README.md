@@ -19,7 +19,7 @@ https://github.com/GarrettBoggs/EventPlanningProgram
 
 ## Licensing
 
-* MIT
+* This project is licensed under the terms of the MIT license.
 
 ## Specs
 
@@ -61,7 +61,7 @@ https://github.com/GarrettBoggs/EventPlanningProgram
   **User given option to repeat randomization process**
 
   * Example input: You ordered a party with chips, 8 people, and a band of high school kids. The total cost is: $23. Is this ok? : No
-  * Example output: You ordered a party with drinks, 23 people, and yourself performing. The total cost is: $33. Is this ok? 
+  * Example output: You ordered a party with drinks, 23 people, and yourself performing. The total cost is: $33. Is this ok?
 
 
 
