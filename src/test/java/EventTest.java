@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EventTest{
-  //REMEMBER TO RENAME!!!!!!1!one!
+
   @Test
-  public void methodBeingTested_behaviorBeingTested_ExpectedReturnType() {
-    //assertEquals(expected-output, methodBeingTested(arguments));
+  public void getCost_CostreturnsMoney_5() {
+    Event tester = new Event(true);
+    assertEquals(true, tester.getCost() instanceof Integer);
   }
 }

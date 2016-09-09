@@ -1,3 +1,11 @@
 class Event {
-  
-}//REMEMBER TO RENAME
+  public boolean mChips;
+
+  public Event(boolean chips) {
+
+  }
+
+  public Integer getCost() {
+    return 5;
+  }
+}

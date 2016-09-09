@@ -1,6 +1,6 @@
-# _Template_
+# _Event Planning Program_
 
-#### By __
+#### By Garrett Boggs
 
 ## Description
 
@@ -21,4 +21,4 @@ https://github.com/ewajm/EventPlanningProgram
 
 * MIT
 
-Copyright (c) 2016 **__**
+Copyright (c) 2016 **Garrett Boggs**
