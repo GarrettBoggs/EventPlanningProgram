@@ -34,8 +34,11 @@ public class App {
         else
           isDrinks = false;
 
-        System.out.println("For music, do you want to hire professionals, high school kids, or just go for it yourself? Type any of the following: pros, kids, me");
-        inputBand = console.readLine();
+      while(!(inputBand.equals("pros")) && !(inputBand.equals("kids")) && !(inputBand.equals("me")))
+        {
+          System.out.println("For music, do you want to hire professionals, high school kids, or just go for it yourself? Type any of the following: pros, kids, me");
+          inputBand = console.readLine();
+        }
       }
 
       else {
@@ -85,5 +88,6 @@ public class App {
       else
         willNotExit = true;
     } while(willNotExit);
+    System.out.println("Enjoy the party!!!");
   }
 }

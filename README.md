@@ -23,17 +23,17 @@ https://github.com/GarrettBoggs/EventPlanningProgram
 
 ## Specs
 
-  Cost method returns a number
+    **Cost method returns a number**
 
-  * Example input: Order a party
+  * Example input: Order an empty party
   * Example output: This will cost $0
 
-  Cost increases with chips
+  **Cost increases with chips**
 
   * Example input: Order a party with chips
   * Example output: This will cost $5
 
-  Cost increases with drinks
+  **Cost increases with drinks**
 
   * Example input: Order a party with drinks
   * Example output: This will cost $10
@@ -43,17 +43,17 @@ https://github.com/GarrettBoggs/EventPlanningProgram
   * Example input: Order a party with 13 people
   * Example output: This will cost $13
 
-  Cost increases with type of music
+  **Cost increases with type of music**
 
   * Example input: Order a party with professional music
   * Example output: This will cost $40
 
-  Cost increases with people
+  **Cost increases with people**
 
   * Example input: Order a party with 10 people
   * Example output: This will cost $10
 
-  User given option to randomize
+  **User given option to randomize**
 
   * Example input: Order a random party
   * Example output: You ordered a party with chips, 8 people, and a band of high school kids. The total cost is: $23.
