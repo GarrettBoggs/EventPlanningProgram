@@ -4,8 +4,7 @@ import java.util.Random;
 public class App {
   public static void main(String[] args) {
     Console console = System.console();
-    Random randomGenerator = new Random();
-    boolean isChips, isDrinks, willNotExit;
+    boolean isChips= false, isDrinks= false, willNotExit;
     String randomChoice = "", inputBand = "";
     int inputGuests = 0;
 
@@ -40,20 +39,12 @@ public class App {
           inputBand = console.readLine();
         }
       }
-      else {
-        inputGuests = randomGenerator.nextInt(100);
-        isChips = randomGenerator.nextBoolean();
-        isDrinks = randomGenerator.nextBoolean();
-        int bandPick = randomGenerator.nextInt(3);
-        if(bandPick == 0)
-          inputBand = "pros";
-        else if(bandPick == 1)
-          inputBand = "kids";
-        else
-          inputBand = "me";
-      }
 
       Event theParty = new Event(isChips,isDrinks,inputGuests,inputBand);
+
+      if(randomChoice.equals("random")) {
+        theParty.randomizeParty();
+      }
 
       System.out.println("You invited " + theParty.getPeople() + " people which will cost you one dollar per person. The total cost is $" + theParty.getPeople());
       if(theParty.getChips())

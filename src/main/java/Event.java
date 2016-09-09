@@ -1,8 +1,12 @@
+import java.util.Random;
+
 class Event {
   private boolean mChips;
   private int mPeople;
   private boolean mDrinks;
   private String mBand;
+
+  Random randomGenerator = new Random();
 
   public Event(boolean chips, boolean drinks, int people, String band) {
     mChips = chips;
@@ -24,6 +28,19 @@ class Event {
 
     total += mPeople;
     return total;
+  }
+
+  public void randomizeParty() {
+    mPeople = randomGenerator.nextInt(100);
+    mChips = randomGenerator.nextBoolean();
+    mDrinks = randomGenerator.nextBoolean();
+    int bandPick = randomGenerator.nextInt(3);
+    if(bandPick == 0)
+      mBand = "pros";
+    else if(bandPick == 1)
+      mBand = "kids";
+    else
+      mBand = "me";
   }
 
   public String getBand() {
