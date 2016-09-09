@@ -33,4 +33,12 @@ class Event {
   public int getPeople() {
     return mPeople;
   }
+
+  public boolean getChips() {
+    return mChips;
+  }
+
+  public boolean getDrinks() {
+    return mDrinks;
+  }
 }

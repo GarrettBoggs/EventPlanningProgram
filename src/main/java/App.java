@@ -5,7 +5,6 @@ public class App {
   public static void main(String[] args) {
     Console console = System.console();
     Random randomGenerator = new Random();
-
     boolean isChips, isDrinks, willNotExit;
     String randomChoice = "", inputBand = "";
     int inputGuests = 0;
@@ -29,7 +28,7 @@ public class App {
         else
           isChips = false;
 
-        System.out.println("Do you want to by Drinks? Y or N?");
+        System.out.println("Do you want to by Drinks? y or n?");
         if(console.readLine().toLowerCase().equals("y"))
           isDrinks = true;
         else
@@ -57,12 +56,12 @@ public class App {
       Event theParty = new Event(isChips,isDrinks,inputGuests,inputBand);
 
       System.out.println("You invited " + theParty.getPeople() + " people which will cost you one dollar per person. The total cost is $" + theParty.getPeople());
-      if(isChips)
+      if(theParty.getChips())
         System.out.println("Your chips will cost: $5");
       else
         System.out.println("You did not buy chips!");
 
-      if(isDrinks)
+      if(theParty.getDrinks())
         System.out.println("Your drinks will cost: $10");
       else
         System.out.println("You did not buy drinks!");
