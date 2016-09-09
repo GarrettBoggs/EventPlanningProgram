@@ -15,10 +15,8 @@ class Event {
     int total = 0;
     if(mChips)
       total += 5;
-
     if(mDrinks)
       total += 10;
-
     if(mBand.equals("pros"))
       total += 40;
     else if(mBand.equals("kids"))

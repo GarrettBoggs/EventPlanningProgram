@@ -11,9 +11,10 @@ public class App {
     int inputGuests = 0;
 
     do {
+      inputBand = "";
       while(!(randomChoice.equals("pick")) && !(randomChoice.equals("random")))
       {
-        System.out.println("Do you want to pick your preferences? Or do you want to randomize? (pick/random)");
+        System.out.println("Do you want to pick your preferences? Or do you want to randomize? Enter either: pick or random)");
         randomChoice = console.readLine();
         System.out.println(randomChoice);
       }
@@ -40,26 +41,22 @@ public class App {
           inputBand = console.readLine();
         }
       }
-
       else {
         inputGuests = randomGenerator.nextInt(100);
-
         isChips = randomGenerator.nextBoolean();
         isDrinks = randomGenerator.nextBoolean();
         int bandPick = randomGenerator.nextInt(3);
-
         if(bandPick == 0)
           inputBand = "pros";
         else if(bandPick == 1)
           inputBand = "kids";
         else
           inputBand = "me";
-
       }
 
       Event theParty = new Event(isChips,isDrinks,inputGuests,inputBand);
 
-      System.out.println("You invited " + theParty.getPeople() + " which will cost you one dollar per person. The total cost is $" + theParty.getPeople());
+      System.out.println("You invited " + theParty.getPeople() + " people which will cost you one dollar per person. The total cost is $" + theParty.getPeople());
       if(isChips)
         System.out.println("Your chips will cost: $5");
       else
@@ -79,9 +76,7 @@ public class App {
       else {
         System.out.println("You are the performer! That takes some guts! But you saved money!");
       }
-
       System.out.println("Your party is going to cost: $" + theParty.getCost());
-
       System.out.println("Is this price ok with you? Type yes to confirm! Any other input will allow you to change party options.");
       if(console.readLine().toLowerCase().equals("yes"))
         willNotExit = false;
